@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bầu Cua Cyber - Đồ án ATTT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">BẦU CUA METAVERSE</div>
+        <div class="user-info">
+            <span>Người chơi: <b id="username">Đăng (SV-ATTT)</b></span>
+            <span>Số dư: <b id="balance" class="money">100,000</b> VNĐ</span>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <div class="dealer-zone">
+            <h2>KẾT QUẢ MÁY CHỦ</h2>
+            <div class="dice-container" id="dice-result">
+                <div class="dice">?</div>
+                <div class="dice">?</div>
+                <div class="dice">?</div>
+            </div>
+            <p id="system-msg" class="sys-msg">Đang chờ người chơi đặt cược...</p>
+        </div>
+
+        <div class="bet-board">
+            <div class="bet-cell" onclick="placeBet('nai')">🦌 NAI <br><span id="bet-nai">0</span></div>
+            <div class="bet-cell" onclick="placeBet('bau')">🍐 BẦU <br><span id="bet-bau">0</span></div>
+            <div class="bet-cell" onclick="placeBet('ga')">🐓 GÀ <br><span id="bet-ga">0</span></div>
+            <div class="bet-cell" onclick="placeBet('ca')">🐟 CÁ <br><span id="bet-ca">0</span></div>
+            <div class="bet-cell" onclick="placeBet('cua')">🦀 CUA <br><span id="bet-cua">0</span></div>
+            <div class="bet-cell" onclick="placeBet('tom')">🦐 TÔM <br><span id="bet-tom">0</span></div>
+        </div>
+
+        <div class="controls">
+            <button class="btn btn-danger" onclick="clearBets()">HỦY CƯỢC</button>
+            <button class="btn btn-success" onclick="requestRoll()">CHỐT SỔ & LẮC</button>
+        </div>
+    </div>
+
+    <div class="security-panel">
+        <h3>Server Monitor Logs</h3>
+        <div id="logs"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
