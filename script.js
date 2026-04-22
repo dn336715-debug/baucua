@@ -1,6 +1,6 @@
 // --- Dữ liệu Client ---
-let balance = 100000;
-const BET_AMOUNT = 10000; // Mỗi lần click đặt 10k
+let balance = 100000000;
+const BET_AMOUNT = 10000000; // Mỗi lần click đặt 10k
 const items = { nai: '🦌', bau: '🍐', ga: '🐓', ca: '🐟', cua: '🦀', tom: '🦐' };
 
 let currentBets = { nai: 0, bau: 0, ga: 0, ca: 0, cua: 0, tom: 0 };
